@@ -10,5 +10,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         val dialog=dialog("name","desc",resources.getDrawable(R.drawable.ic_info))
         dialog.createDialog(this)
+
+
     }
 }

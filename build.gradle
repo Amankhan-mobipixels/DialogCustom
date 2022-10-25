@@ -5,7 +5,16 @@ plugins {
     id 'org.jetbrains.kotlin.android' version '1.7.10' apply false
     id 'maven-publish'
 }
+publishing {
+    publications {
+        mavenJava(MavenPublication) {
+            groupId = 'com.example.customdialog'
+            artifactId = 'Dialog'
+            version = 'v1.0.10'
 
+        }
+    }
+}
 task clean(type: Delete) {
     delete rootProject.buildDir
 }

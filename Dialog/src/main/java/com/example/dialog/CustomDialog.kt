@@ -13,7 +13,7 @@ import com.airbnb.lottie.LottieAnimationView
 import com.bumptech.glide.Glide
 
 
-class dialog {
+class CustomDialog {
 
     var heading: String? = null
     var description: String? = null

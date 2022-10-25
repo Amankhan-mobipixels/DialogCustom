@@ -10,7 +10,8 @@ publishing {
         mavenJava(MavenPublication) {
             groupId = 'com.github.Amankhan-mobipixels'
             artifactId = 'DialogCustom'
-            version = 'v1.0.11'
+            version = 'v1.0.12'
+
 
         }
     }

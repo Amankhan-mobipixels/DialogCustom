@@ -8,9 +8,9 @@ plugins {
 publishing {
     publications {
         mavenJava(MavenPublication) {
-            groupId = 'com.example.customdialog'
-            artifactId = 'Dialog'
-            version = 'v1.0.10'
+            groupId = 'com.github.Amankhan-mobipixels'
+            artifactId = 'DialogCustom'
+            version = 'v1.0.11'
 
         }
     }

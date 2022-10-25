@@ -8,6 +8,7 @@ pluginManagement {
 dependencyResolutionManagement {
     repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
     repositories {
+        ext.kotlin_version = '1.5.1'
         google()
         mavenCentral()
         maven { url "https://jitpack.io" }

@@ -3,12 +3,13 @@ plugins {
     id 'org.jetbrains.kotlin.android'
 }
 apply plugin: 'kotlin-android'
+apply plugin: 'maven-publish'
 
 android {
     compileSdk 32
 
     defaultConfig {
-        minSdk 24
+        minSdk 21
         targetSdk 32
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
@@ -29,7 +30,19 @@ android {
         jvmTarget=11
     }
 }
-
+afterEvaluate {
+    publishing {
+        publications {
+            // Creates a Maven publication called "release".
+            release(MavenPublication) {
+                from components.release
+                groupId = 'com.github.Amankhan-mobipixels'
+                artifactId = 'DialogCustom'
+                version = '1.0.15'
+            }
+        }
+    }
+}
 dependencies {
 
     implementation 'androidx.core:core-ktx:1.7.0'
